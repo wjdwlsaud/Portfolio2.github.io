@@ -2,185 +2,239 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!--========== UNICONS ==========-->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <!--========== SWIPER CSS ==========-->
-    <link rel="stylesheet" href="">
-    <!--========== CSS ==========-->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Ano's Portfolio</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- ===== CSS Files ===== -->
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="asset/css/skins/color-1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 <body>
-<!--========== HEADER ==========-->
-<header class="header" id="header">
-    <nav class="nav container">
-        <a href="#" class="nav__logo">Ano</a>
+<!-- ===== 메인 컨테이너 시작 ===== -->
+<div class="main-container">
+    <!-- ===== 사이드 시작 ===== -->
+    <div class="aside">
 
-        <div class="nav__menu" id="nav-menu">
-            <ul class="nav__list grid">
-                <li class="nav__item">
-                    <a href="#home" class="nav__link">
-                        <i class="uil uil-estate nav__icon"></i> Home
-                    </a>
-                </li>
-
-                <li class="nav__item">
-                    <a href="#about" class="nav__link">
-                        <i class="uil uil-user nav__icon"></i> About
-                    </a>
-                </li>
-
-                <li class="nav__item">
-                    <a href="#skills" class="nav__link">
-                        <i class="uil uil-file-alt nav__icon"></i> Skills
-                    </a>
-                </li>
-
-                <li class="nav__item">
-                    <a href="#services" class="nav__link">
-                        <i class="uil uil-briefcase-alt nav__icon"></i> Services
-                    </a>
-                </li>
-
-                <li class="nav__item">
-                    <a href="#portfolio" class="nav__link">
-                        <i class="uil uil-scenery nav__icon"></i> Portfolio
-                    </a>
-                </li>
-
-                <li class="nav__item">
-                    <a href="#contact" class="nav__link">
-                        <i class="uil uil-message nav__icon"></i> Contactme
-                    </a>
-                </li>
-            </ul>
-
-            <i class="uil uil-times nav__close" id="nav-close"></i>
-
+        <!-- ===== 사이드 로고 ===== -->
+        <div class="logo">
+            <a href="#"><span>A</span>no</a>
         </div>
 
-        <div class="nav__btns">
-            <div class="nav__toggle" id="nav-toggle">
-                <i class="uil uil-apps"></i>
-            </div>
+        <!-- ===== 사이드 토글 ===== -->
+        <div class="nav-toggler">
+            <span></span>
         </div>
 
-    </nav>
-</header>
+        <!-- ===== 사이드 메뉴 ===== -->
+        <ul class="nav">
+            <li><a href="#" class="active"><i class="fa fa-home"></i> Home</a></li>
+            <li><a href="#"><i class="fa fa-user"></i> About</a></li>
+            <li><a href="#"><i class="fa fa-list"></i> Services</a></li>
+            <li><a href="#"><i class="fa fa-briefcase"></i> Portfolio</a></li>
+            <li><a href="#"><i class="fa fa-comment"></i> Contact</a></li>
+        </ul>
+    </div>
+    <!-- ===== 사이드 끝 ===== -->
 
-<!--========== MAIN ==========-->
-<main class="main">
-    <!--========== HOME ==========-->
-    <section class="home section" id="home">
-        <div class="home__container container grid">
-            <div class="home__content grid">
-                <div class="home__social">
-                    <a href="www.linkedin.com/in/wjdwlsaud1999" target="_blank" class="home__social-icon">
-                        <i class="uil uil-linkedin-alt"></i>
-                    </a>
-                    <a href="https://dribbble.com/AnoLover?onboarding=true" target="_blank" class="home__social-icon">
-                        <i class="uil uil-dribbble"></i>
-                    </a>
-                    <a href="https://github.com/wjdwlsaud" target="_blank" class="home__social-icon">
-                        <i class="uil uil-github-alt"></i>
-                    </a>
-                </div>
+    <!-- 메인 콘텐츠 시작 -->
+    <div class="main-content">
 
-                <div class="home__img">
-                    <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg">
-                        <mask id="mask0" mask-type="alpha">
-                            <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547
-                                     130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775
-                                     97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666
-                                     0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                        </mask>
-                        <g mask="url(#mask0)">
-                            <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346
-                                     165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403
-                                     129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028
-                                     -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                            <image class="home__blob-img" x='16' y='6' xlink:href="assets/img/perfil.png"/>
-                        </g>
-                    </svg>
-                </div>
+        <!-- ===== 홈 섹션 시작 ===== -->
+        <section class="home section hidden">
 
-                <div class="home__data">
-                    <h1 class="home__title">안녕하세요 저는 정진명 입니다.</h1>
-                    <h3 class="home__subtitle">프론트앤드 개발자</h3>
-                    <p class="home__description">웹 개발 지식에 대한 높은 수준의 경험을 가지고 있습니다.</p>
-                    <a href="#contact" class="button button--flex">
-                        Contact Me<i class="uil uil-message button__icon"></i>
-                    </a>
-                </div>
-            </div>
+            <div class="container">
 
-            <div class="home__scroll">
-                <a href="#about" class="home__scroll-button button--flex">
-                    <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-                    <span class="home__scroll-name">Scroll Down</span>
-                    <i class="uil uil-arrow-down home__scroll-arrow"></i>
-                </a>
-            </div>
-
-        </div>
-        </div>
-    </section>
-    <!--========== ABOUT ==========-->
-    <section class="about section" id="about">
-        <h2 class="section__title">About Me</h2>
-        <span class="section__subtitle">나를 소개합니다</span>
-
-        <div class="about__container container grid">
-            <img src="assets/img/about.png" alt="" class="about__img">
-
-            <div class="about__data">
-                <p class="about__description">광범위한 지식과 경험을 가진 웹 개발자로,
-                    웹 기술 및 UI/UX 설계 분야에서 일하며 양질의 작업을 제공할수있습니다.</p>
-
-                <div class="about__info">
-                    <div>
-                        <span class="about__info-title">01+</span>
-                        <span class="about__info-name">년의 <br> 현재진행중인 경험</span>
+                <div class="row">
+                    <!-- ===== 홈 내용 ===== -->
+                    <div class="home-info padd-15">
+                        <h3 class="hello">안녕하십니까, 제 이름은 <span class="name">정진명</span> 입니다.</h3>
+                        <h3 class="my-profession">저는 <span class="typing">프론트 개발자</span> 입니다.</h3>
+                        <p>
+                            <span>'시작은 미약하나 끝은 창대하라'</span>
+                            짧은 경험을 가지고 있지만 열정과 도전정신으로 무장하여 노력하는 프론트 개발자 입니다.</p>
+                        <a href="#contact" class="btn hire-me">더 알아보기</a>
+                    </div>
+                    <!-- ===== 홈 이미지 ===== -->
+                    <div class="home-img padd-15">
+                        <img src="asset/images/profile.jpg" alt="">
                     </div>
 
-                    <div>
-                        <span class="about__info-title">02+</span>
-                        <span class="about__info-name"> 개의 완료한 <br>  Project </span>
-                    </div>
+                </div>
 
-                    <div>
-                        <span class="about__info-title">24+</span>
-                        <span class="about__info-name">년 동안 <br> 숨쉬는중</span>
+            </div>
+        </section>
+        <!-- ===== 홈 섹션 끝 ===== -->
+
+        <!-- ===== 어바웃 섹션 시작 ===== -->
+        <section class="about section">
+            <div class="container">
+
+                <div class="row">
+                    <div class="section-title padd-15">
+                        <h2>About me</h2>
                     </div>
                 </div>
 
-                <div class="about__buttons">
-                    <a download="" href="assets/pdf/TEST.pdf" class="button button--flex">
-                        이력서 다운로드 <i class="uil uil-download-alt button__icon"></i>
-                    </a>
+                <div class="row">
+                    <div class="about-content padd-15">
+
+                        <div class="row">
+                            <div class="about-text padd-15">
+                                <h3>제 이름은 정진명 입니다 그리고 <span>프론트 개발자</span>입니다.</h3>
+                                <p>짧은 시간이지만 웹 개발을 위해 쌓아온 능력과 기술을 발휘하여 기업과 함께 성장가능한 인재.
+                                    저는 정보처리 산업기사 자격증 취득과정을 통해 HTML, CSS, Javascript와 jQuery, JSP, DBMS 등
+                                    프론트와 백엔드 기술에 대한 지식과 기술을 쌓아왔습니다.
+                                    특히, JSP Servlet 기반과 HTML, CSS, Java Script를 이용한 URDO_Project를 완성한 경험이 있고 이 과정에서
+                                    html, CSS 디자인 패턴에 대한 이해와 MVC 2 패턴을 이용한 프로그래밍 활용에 대한 강점을 가질 수 있었습니다.</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="personal-info padd-15">
+                                <div class="row">
+
+                                    <div class="info-item padd-15">
+                                        <p>Birthday : <span>1999 08 17</span> </p>
+                                    </div>
+                                    <div class="info-item padd-15">
+                                        <p>Age : <span>24</span> </p>
+                                    </div>
+                                    <div class="info-item padd-15">
+                                        <p>Email : <span>wjdwlsaud_99@naver.com</span> </p>
+                                    </div>
+                                    <div class="info-item padd-15">
+                                        <p>Degree : <span>평택대학교 실용음악학과 중퇴</span> </p>
+                                    </div>
+                                    <div class="info-item padd-15">
+                                        <p>Phone : <span>+82 10 - 6415 - 3737</span> </p>
+                                    </div>
+                                    <div class="info-item padd-15">
+                                        <p>City : <span>경상북도 경산시 백자로 10길 11</span> </p>
+                                    </div>
+
+                                </div>
+                                <div class="buttons padd-15">
+                                    <a href="#" class="btn">이력서 다운로드</a>
+                                    <a href="#contact" class="btn hire-me">더 알아보기</a>
+                                </div>
+                            </div>
+
+                            <div class="skills padd-15">
+                                <div class="row">
+
+                                    <div class="skill-item padd-15">
+                                        <h5>HTML</h5>
+                                        <div class="progress">
+                                            <div class="progress-in" style="width: 97%;"></div>
+                                            <div class="skill-percent">97%</div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item padd-15">
+                                        <h5>CSS</h5>
+                                        <div class="progress">
+                                            <div class="progress-in" style="width: 76%;"></div>
+                                            <div class="skill-percent">76%</div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item padd-15">
+                                        <h5>JavaScript</h5>
+                                        <div class="progress">
+                                            <div class="progress-in" style="width: 86%;"></div>
+                                            <div class="skill-percent">86%</div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item padd-15">
+                                        <h5>Java</h5>
+                                        <div class="progress">
+                                            <div class="progress-in" style="width: 70%;"></div>
+                                            <div class="skill-percent">70%</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <div class="education padd-15">
+                                <h3 class="title">Education</h3>
+                                <div class="row">
+                                    <div class="timeline-box padd-15">
+                                        <div class="timeline shadow-dark">
+                                            <!-- ===== 타임라인 아이템 ===== -->
+                                            <div class="timeline-item">
+                                                <div class="circle-dot"></div>
+                                                <h3 class="timeline-date">
+                                                    <i class="fa fa-calendar"></i> 2015 ~ 2018
+                                                </h3>
+                                                <h4 class="timeline-title">경북예술고등학교</h4>
+                                                <p class="timeline-text">
+                                                    실용음악학과 베이스기타 전공
+                                                </p>
+                                            </div>
+                                            <div class="timeline-item">
+                                                <div class="circle-dot"></div>
+                                                <h3 class="timeline-date">
+                                                    <i class="fa fa-calendar"></i> 2018 ~ 2019
+                                                </h3>
+                                                <h4 class="timeline-title">평택대학교</h4>
+                                                <p class="timeline-text">
+                                                    실용음악학과 베이스기타 전공
+                                                </p>
+                                            </div>
+                                            <div class="timeline-item">
+                                                <div class="circle-dot"></div>
+                                                <h3 class="timeline-date">
+                                                    <i class="fa fa-calendar"></i> 21-11-09 ~ 22-01-03
+                                                </h3>
+                                                <h4 class="timeline-title">Korea It Academy</h4>
+                                                <p class="timeline-text">
+                                                    Python 1,2
+                                                </p>
+                                            </div>
+                                            <div class="timeline-item">
+                                                <div class="circle-dot"></div>
+                                                <h3 class="timeline-date">
+                                                    <i class="fa fa-calendar"></i> 22-01-26 ~ 22-02-25
+                                                </h3>
+                                                <h4 class="timeline-title">Korea It Academy</h4>
+                                                <p class="timeline-text">
+                                                    Java vacation special lecture 1,2
+                                                </p>
+                                            </div>
+                                            <div class="timeline-item">
+                                                <div class="circle-dot"></div>
+                                                <h3 class="timeline-date">
+                                                    <i class="fa fa-calendar"></i> 2022-03-24 ~ 22-08-18
+                                                </h3>
+                                                <h4 class="timeline-title">Korea It Academy</h4>
+                                                <p class="timeline-text">
+                                                    [과정평가형] 정보처리산업기사 자격증취득과정
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="experience padd-15">
+                                <h3 class="title">Experience</h3>
+                            </div>
+
+                        </div>
+
+                    </div>
                 </div>
-
             </div>
-        </div>
-    </section>
-    <!--========== SKILLS ==========-->
+        </section>
+        <!-- ===== 어바웃 섹션 끝 ===== -->
 
-    <!--========== QUALIFICATION ==========-->
-
-    <!--========== SERVICES ==========-->
-
-    <!--========== PORTFOLIO ==========-->
-
-    <!--========== CONTACKME ==========-->
-</main>
-<!--========== FOOTER ==========-->
-
-<!--========== SCROLL TOP ==========-->
-
-<!--========== SWIPER JS ==========-->
-<script src=""></script>
-
-<!--========== MAIN JS ==========-->
-<script src="assets/js/main.js"></script>
+    </div>
+    <!-- 메인 콘텐츠 끝 -->
+</div>
+<!-- ===== 메인 컨테이너 끝 ===== -->
+<!-- ===== JS Files ===== -->
+<script src="asset/js/script.js"></script>
 </body>
 </html>
