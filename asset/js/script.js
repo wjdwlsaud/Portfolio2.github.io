@@ -81,9 +81,11 @@ function updateNav(element)
 document.querySelector(".hire-me").addEventListener("click", function()
 {
     const sectionIndex = this.getAttribute("data-section-index");
-
+    // console.log(sectionIndex);
     showSection(this);
     updateNav(this);
+    removeBackSection();
+    addBackSection(sectionIndex);
 })
 
 const navToggleBtn = document.querySelector(".nav-toggler");
