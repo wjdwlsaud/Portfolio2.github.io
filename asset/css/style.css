@@ -53,6 +53,38 @@ ul
     display: block;
     padding: 0 30px;
     opacity: 1;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 270px;
+    right: 0;
+    z-index: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.section.back-section
+{
+    z-index: 1;
+}
+
+.section.active
+{
+    z-index: 2;
+    opacity: 1;
+    animation: slideSection 1s ease;
+}
+
+@keyframes slideSection
+{
+    0%
+    {
+        transform: translateX(100%);
+    }
+    100%
+    {
+        transform: translateX(0%);
+    }
 }
 
 .hidden
@@ -860,9 +892,30 @@ h3.my-profession
         left: -270px;
     }
 
-    .main-content
+    .aside.open
     {
-        padding-left: 0;
+        left: 0;
+    }
+
+    .aside .nav-toggler
+    {
+        display: flex;
+        left: 30px;
+    }
+
+    .aside .nav-toggler.open
+    {
+        left: 300px;
+    }
+
+    .section
+    {
+        left: 0;
+    }
+
+    .section.open
+    {
+        left: 270px;
     }
 
     .about .about-content .personal-info .info-item p span
