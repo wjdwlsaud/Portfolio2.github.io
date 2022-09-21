@@ -61,6 +61,7 @@ ul
     z-index: 0;
     overflow-x: hidden;
     overflow-y: auto;
+    transition: all 0.3s ease;
 }
 
 .section.back-section
@@ -203,6 +204,7 @@ ul
     justify-content: center;
     align-items: center;
     z-index: 10;
+    transition: all 0.3s ease;
 }
 
 /* ========== 사이드 로고 ========== */
@@ -269,6 +271,8 @@ ul
     display: none;
     justify-content: center;
     align-items: center;
+    transition: all 0.3s ease;
+
 }
 
 .aside .nav-toggler span
@@ -777,6 +781,12 @@ h3.my-profession
 {
     width: 100%;
     display: block;
+    transition: all 0.3s ease;
+}
+
+.portfolio .portfolio-item-inner .portfolio-img img:hover
+{
+    transform: scale(80%);
 }
 
 /* ========== 콘텍트 ========== */
